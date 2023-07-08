@@ -4,6 +4,17 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
+
+    //Тест на конструктор:
+
+    @Test
+    public void setStation() {
+        Radio rad = new Radio(10);
+        int expected = 10;
+        int actual = rad.getMaxStation();
+        Assertions.assertEquals(expected, actual);
+    }
+
     //Тесты функции переключения каналов:
     @Test
     public void setCurrentStationInZero() {
